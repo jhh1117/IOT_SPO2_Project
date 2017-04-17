@@ -1,0 +1,49 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "21.1.2"
+
+    defaultConfig {
+        applicationId "com.pelkan.tab"
+        minSdkVersion 16
+        targetSdkVersion 21
+        versionCode 2
+        versionName "1.1"
+    }
+    buildTypes {
+        release {
+          //  minifyEnabled true
+        //    proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/ASL2.0'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+    }
+}
+
+
+repositories {
+    maven { url "https://jitpack.io" }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:21.0.3'
+    compile 'com.google.android.gms:play-services-appindexing:8.1.0'
+    compile 'com.github.medyo:fancybuttons:1.8.1'
+    compile 'com.github.lzyzsd:circleprogress:1.1.0@aar'
+    compile project(':json_simple-1.1')
+    compile project(':httpclient-4.3.6')
+    compile project(':httpcore-4.3.3')
+    compile project(':httpmime-4.3.6')
+    compile 'com.github.PhilJay:MPAndroidChart:v2.2.5'
+
+}

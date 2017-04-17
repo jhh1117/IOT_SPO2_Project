@@ -1,0 +1,23 @@
+<resources>
+    <!-- the theme applied to the application or activity -->
+    <style name="CustomActionBarTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#5FAEDE</item>
+    </style>
+    <style name="MyTheme_ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:icon">@drawable/ic_la</item>
+    </style>
+    <color name="tab">#FF2222</color>
+    <color name="bora">#5263BD</color>
+    <color name="main">#5FAEDE</color>
+    <color name="emeral">#68D4AB</color>
+    <color name="num">#8EF58D</color>
+    <color name="shape">#F4FA8B</color>
+    <color name="actionbar">#45ACCD</color>
+    <color name="back1">#98CCED</color>
+    <color name="back2">#DCEFFF</color>
+    <color name="btn1">#1356AC</color>
+    <color name="btn2">#012245</color>
+    <color name="mainBack">#EEEEEE</color>
+
+ </resources>
